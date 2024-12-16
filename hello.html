@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for additional design tweaks */
+    .custom-shadow {
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <div class="max-w-7xl mx-auto py-12 px-6">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Left Section: Images -->
+      <div class="relative flex-1">
+        <!-- First Image -->
+        <img
+          src="images/jjj.jpg" 
+          alt="Students on staircase"
+          class="w-full rounded-lg shadow-lg"
+        />
+        <!-- Second Image -->
+        <img
+          src="images/lk.jpg"
+          alt="Smiling student"
+          class="absolute -top-16 left-8 w-3/5 rounded-lg border-4 border-white custom-shadow"
+        />
+        <!-- Experience Badge -->
+        
+      </div>
+
+      <!-- Right Section: Text -->
+      <div class="flex-1">
+        <!-- Header -->
+        <h4 class="text-[#46B348] uppercase font-bold text-sm tracking-wide">About Our University</h4>
+        <h1 class="text-4xl font-extrabold mt-2 leading-tight">
+          A few words about the <span class="text-[#0157A2] underline">University</span>
+        </h1>
+        <p class="text-gray-600 mt-4">
+          Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational.
+        </p>
+
+        <!-- Features -->
+        <div class="mt-6 space-y-6">
+          <!-- Feature 1 -->
+          <div class="flex items-start">
+            <span
+              class="flex items-center justify-center w-12 h-12 bg-red-100 text-red-600 rounded-full text-xl"
+            >
+              🎓
+            </span>
+            <div class="ml-4">
+              <h5 class="text-lg font-bold">Building Trust</h5>
+              <p class="text-sm text-gray-600">We are committed to building trust</p>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="flex items-start">
+            <span
+              class="flex items-center justify-center w-12 h-12 bg-red-100 text-red-600 rounded-full text-xl"
+            >
+              ✅
+            </span>
+            <div class="ml-4">
+              <h5 class="text-lg font-bold">Trusted by Students</h5>
+              <p class="text-sm text-gray-600">
+                Most trusted & recommended by students
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <button
+          class="mt-8 bg-[] text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700"
+        >
+          Book an Appointment →
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.logo{
+    height: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 8px 15px 8px;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.Getstarted{
+    background-color: green;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.Getstarted:hover{
+    background-color: blue;
+    color: white;
+}
+
+.heroimage{
+    height: 300px;
+    padding-right: 15px;
+}
+
+.hero{
+    display: flex;
+}
+
+.herotext{
+    padding: 40px;
+}
+
+.herotext p{
+    margin-top: 10px;
+    color: rgb(140, 124, 124);
+    line-height: 1.5;
+}
+
+.box1{
+    background-color: #39B54A;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+}
+.box2{
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    
+}
+
+.box2 h3{
+    color: #39B54A;
+    padding-bottom: 3px;
+}
+.box1 h3, .box3 h3{
+ 
+    padding-bottom: 3px;
+}
+.box3{
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,200px);
+    background-color: #28419F;
+    padding: 20px 25px 20px 75px;
+    gap: 20px;
+}
+
+.image{
+  height: 240px;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    margin-top: 30px;
+    padding-left: 50px;
+    gap: 20px;
+}
+
+.card1 h3{
+    color: #39B54A;
+    font-size: 30px;
+    padding-bottom: 3px;
+}
+
+.card1 p{
+    color: grey;
+    line-height: 1.5;
+}Knowledge,Skills and Morality
+Somali International University is one of the higher education institutions in the
+
+.btn{
+    border: 1px solid #39B54A;;
+    border-radius: 20px;
+    padding: 8px 14px 8px 14px;
+}
+
+.card1 a{
+    text-decoration: none;
+    color: #39B54A;;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.dhaqaaq{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+
+@keyframes moveup {
+   100%{
+    opacity: 1;
+    transform: translateY(0px);
+   }
+}
+.dhaqaaq2{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+   100%{
+    opacity: 1;
+    transform: translateY(0px);
+   }
+}
+
+
+/* Hamburger Icon (Shaashadaha Yaryar) */
+
+/* Media Query: Shaashadaha Yaryar */
+@media (max-width: 768px) {
+    .nav-menu, .Getstarted {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        padding: 10px;
+        gap: 20px;
+        z-index: 1000;
+        
+        
+        
+       
+
+    
+        
+    }
+     
+    .nav-icon:hover + .nav-menu, .nav-menu:hover{
+        display: flex;
+    }
+    .nav-icon {
+        display: block; /* Soo muuji hamburger icon */
+    }
+
+ .nav-menu li a:hover{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 5px;
+ }
+}
+
+/* Shaashadaha Waaweyn */
+@media (min-width: 769px) {
+    .nav-menu {
+        display: flex; /* Soo muuji menu */
+    }
+
+    .nav-icon {
+        display: none; /* Qari hamburger icon */
+    }
+}
